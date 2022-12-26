@@ -15,15 +15,3 @@ int main()
     }
     return 0;
 }
-
-// for testing ranking library
-//#include "Ranking.h"
-//#include <iostream>
-//
-//int main(){
-//    Ranking ranking;
-//    std::vector<std::pair<std::string, int>> rankEasy = ranking.getList(HARD);
-//    for (auto i : rankEasy) {
-//        std::cout << i.first << " | " << i.second << '\n';
-//    }
-//}
