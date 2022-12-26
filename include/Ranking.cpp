@@ -54,7 +54,7 @@ void RankingLevel::saveRankToFile() {
         cout_file << i.first << ' ' << i.second << '\n';
     cout_file.close();
 
-    std::cout << "Saved rank into file!\n";
+//    std::cout << "Saved rank into file!\n";
 }
 
 RankingLevel::RankingLevel(std::string fileName) {

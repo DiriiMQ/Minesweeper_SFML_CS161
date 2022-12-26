@@ -1,2 +1,4 @@
 checklist.txt
 cmake-build-debug/**
+build/**
+release/**
