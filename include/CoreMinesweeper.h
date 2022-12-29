@@ -10,6 +10,7 @@
 #include <vector>
 #include <utility>
 #include <fstream>
+#include <queue>
 #include "CustomRandom.h"
 
 namespace custom_constant{

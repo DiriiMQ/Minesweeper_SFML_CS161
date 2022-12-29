@@ -236,10 +236,46 @@ std::pair<int, int> MineSweeper::initial_no_mine(){
 
     if(!full_ok) return std::make_pair(0, 0);
 
+    int cntMax = 0;
+    std::pair<int, int> res = {-1, -1};
+    std::vector<std::vector<bool>> visited(this->row, std::vector<bool>(this->column, false));
     for (int i = 0; i < this->row; ++i)
-        for (int j = 0; j < this->column; ++j)
-            if (this->board[i][j] == _OK)
-                return std::make_pair(i, j);
+        for (int j = 0; j < this->column; ++j) {
+//            if (this->board[i][j] == _OK)
+//                return std::make_pair(i, j);
+            if (visited[i][j])
+                continue;
+
+            // find the cell in the region of the largest number of zeros
+            if (this->board[i][j] == _OK) {
+                int cnt = 1;
+                std::queue<std::pair<int, int>> q;
+                q.push({i, j});
+                visited[i][j] = true;
+                while (q.size()) {
+                    int x = q.front().first, y = q.front().second;
+                    q.pop();
+                    for (int ix = 0; ix < 8; ++ix) {
+                        int nx = x + custom_constant::DX[ix], ny = y + custom_constant::DY[ix];
+
+                        if (nx < 0 || ny < 0 || nx >= this->row || ny >= this->column || visited[nx][ny] || this->board[nx][ny] != _OK)
+                            continue;
+
+                        ++cnt;
+                        visited[nx][ny] = true;
+                        q.push({nx, ny});
+                    }
+                }
+
+                if (cnt > cntMax) {
+                    cntMax = cnt;
+                    res = {i, j};
+                }
+            }
+        }
+
+    if (res.first != -1)
+        return res;
 
     for (int i = 0; i < this->row; ++i)
         for (int j = 0; j < this->column; ++j)
