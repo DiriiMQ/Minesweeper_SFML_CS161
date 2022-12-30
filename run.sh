@@ -1,2 +1,2 @@
-cd release
+cd release_linux
 ./minesweeper_gui

@@ -1,8 +1,8 @@
-mkdir build
-cd build
+mkdir build_linux
+cd build_linux
 cmake ..
 make 
 cd ..
-mkdir release
-mv build/minesweeper_gui release/minesweeper_gui
+mkdir release_linux
+mv build_linux/minesweeper_gui release_linux/minesweeper_gui
 
