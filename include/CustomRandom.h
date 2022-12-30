@@ -10,10 +10,7 @@
 #include <algorithm>
 
 namespace rd{
-    inline std::mt19937 rng(std::chrono::steady_clock::now().time_since_epoch().count());
-//    int randomInt(int _min, int _max){
-//        return std::uniform_int_distribution<int>(_min, _max)(rng);
-//    }
+    static std::mt19937 rng(std::chrono::steady_clock::now().time_since_epoch().count());
     template <typename X>
     void randomArray(std::vector<X> &a){
         std::shuffle(a.begin(), a.end(), rng);
