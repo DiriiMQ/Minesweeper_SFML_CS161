@@ -2,3 +2,7 @@ checklist.txt
 cmake-build-debug/**
 build/**
 release/**
+build_linux/**
+release_linux/**
+build_windows/**
+release_windows/**

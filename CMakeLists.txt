@@ -1,6 +1,6 @@
 set(CMAKE_C_COMPILER gcc)
 set(CMAKE_CXX_COMPILER g++)
-find_package(SFML 2.5 COMPONENTS audio graphics window system REQUIRED)
+find_package(SFML COMPONENTS audio graphics window system REQUIRED)
 
 cmake_minimum_required(VERSION 3.24)
 project(minesweeper_gui)
