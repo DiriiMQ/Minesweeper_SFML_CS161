@@ -6,3 +6,4 @@ build_linux/**
 release_linux/**
 build_windows/**
 release_windows/**
+command_to_compile.txt
