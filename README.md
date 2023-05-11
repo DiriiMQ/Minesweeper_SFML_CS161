@@ -26,4 +26,4 @@
 
 ## Documentation
 
-Read the documentation [here](https://dirii-my.sharepoint.com/:w:/g/personal/diriimq_dirii_onmicrosoft_com/EfkurOfzY15HoitM_GLuDWABFrRHYMgWD5wyByRRG0_0UQ?e=i9ZFtd).
+Read the documentation [here](https://studenthcmusedu-my.sharepoint.com/:w:/g/personal/22125083_student_hcmus_edu_vn/EYZTaYgKJk1Eg5KeJaezfZoBdkiB5-Ke6y5OWvXmoegIzw?e=LuciOr).
